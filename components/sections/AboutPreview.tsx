@@ -13,7 +13,7 @@ export default function AboutPreview() {
       />
 
       <div className="grid items-center gap-16 md:grid-cols-2">
-        <div>
+        <div  className="order-2 md:order-1">
           <h2 className="text-4xl font-black">
             Hello, I’m <br />
             <span className="text-purple-300">{portfolio.name}</span>
@@ -41,21 +41,18 @@ export default function AboutPreview() {
           </div>
         </div>
 
-        <div className="flex justify-center">
-          <div className="group relative grid h-80 w-80 place-items-center overflow-hidden rounded-full border-4 border-purple-500/20 bg-black shadow-[0_0_80px_rgba(168,85,247,0.35)] transition-all duration-300 ease-out hover:-translate-y-2 hover:border-purple-400/70 hover:shadow-[0_0_110px_rgba(168,85,247,0.75)]">
-            <Image
-              src="/images/profile.png"
-              alt={portfolio.name}
-              fill
-              className="object-cover opacity-75 transition-all duration-300 group-hover:scale-110 group-hover:opacity-90"
-            />
-
-            <User
-              size={120}
-              className="relative z-10 text-purple-500/70 transition-all duration-300 group-hover:text-purple-300/80 group-hover:drop-shadow-[0_0_25px_rgba(168,85,247,0.85)]"
-            />
-          </div>
+        <div className="order-1 flex justify-center md:order-2">
+        <div className="group relative h-64 w-64 overflow-hidden rounded-full border-4 border-purple-400/70 bg-black shadow-[0_0_80px_rgba(168,85,247,0.35)] transition-all duration-300 ease-out hover:-translate-y-2 hover:border-purple-300 hover:shadow-[0_0_110px_rgba(168,85,247,0.75)] sm:h-80 sm:w-80">
+          <Image
+            src="/images/profile.jpg"
+            alt={portfolio.name}
+            fill
+            priority
+            sizes="320px"
+            className="h-full w-full object-cover object-center transition-all duration-500 ease-out group-hover:scale-110"
+          />
         </div>
+      </div>
       </div>
 
       <div className="mt-20 grid gap-6 md:grid-cols-3">

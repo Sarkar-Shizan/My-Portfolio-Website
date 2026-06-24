@@ -15,7 +15,7 @@ export const portfolio = {
   
   stats: [
     {
-      value: "11",
+      value: "10",
       label: "Total Projects",
       description: "Innovative web solutions crafted",
     },

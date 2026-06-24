@@ -1,93 +1,163 @@
 export type Project = {
   id: string;
+  slug: string;
   title: string;
   description: string;
   longDescription: string;
   tags: string[];
   year: string;
   category: string;
-  image: string;
-  liveUrl: string;
-  githubUrl: string;
+  image?: string;
+  liveUrl?: string;
+  githubUrl?: string;
 };
 
 export const projects: Project[] = [
   {
-    id: "nebula-analytics",
-    title: "Nebula Analytics",
-    description: "Realtime dashboard for product analytics with custom charting and alerts.",
+    id: "my-portfolio-website",
+    slug: "my-portfolio-website",
+    title: "My Portfolio Website",
+    description:
+      "A modern personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.",
     longDescription:
-      "Nebula Analytics is a modern dashboard built for teams that need fast insights. It includes KPI cards, responsive charts, alerts, and a clean interface for monitoring product performance.",
-    tags: ["React", "D3", "Supabase"],
-    year: "2025",
-    category: "Dashboard",
-    image: "/images/projects/project-1.png",
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: "cobalt-commerce",
-    title: "Cobalt Commerce",
-    description: "Headless storefront with edge-rendered product pages and instant checkout.",
-    longDescription:
-      "Cobalt Commerce is a fast e-commerce frontend focused on product discovery, smooth browsing, and frictionless checkout. It uses modern rendering patterns for performance.",
-    tags: ["Next.js", "Stripe", "Tailwind"],
-    year: "2025",
-    category: "E-commerce",
-    image: "/images/projects/project-2.png",
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: "lumen-docs",
-    title: "Lumen Docs",
-    description: "Documentation engine with MDX, search and live code playgrounds.",
-    longDescription:
-      "Lumen Docs helps developers publish clean documentation with MDX content, fast search, code previews, and responsive layouts for technical products.",
-    tags: ["MDX", "TypeScript", "Vite"],
-    year: "2024",
-    category: "Documentation",
-    image: "/images/projects/project-1.png",
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: "pulse-chat",
-    title: "Pulse Chat",
-    description: "Realtime team chat with threads, presence and file sharing.",
-    longDescription:
-      "Pulse Chat is a communication app concept with realtime messaging, threaded conversations, online presence, and file sharing for small teams.",
-    tags: ["React", "Socket", "Node"],
-    year: "2024",
-    category: "Realtime App",
-    image: "/images/projects/project-2.png",
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: "orbit-tasks",
-    title: "Orbit Tasks",
-    description: "Minimal project tracking app with clean mobile-first workflow.",
-    longDescription:
-      "Orbit Tasks is a simple productivity app designed around clarity. It supports project boards, task status, priorities, and a focused mobile-first workflow.",
-    tags: ["Next.js", "Prisma", "Auth"],
-    year: "2024",
-    category: "Productivity",
-    image: "/images/projects/project-1.png",
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: "aurora-portfolio",
-    title: "Aurora Portfolio",
-    description: "Animated personal site template with smooth motion and CSS variables.",
-    longDescription:
-      "Aurora Portfolio is a polished personal website template with dark theme, card layouts, animated sections, and reusable components for easy customization.",
-    tags: ["React", "Motion", "CSS"],
-    year: "2023",
+      "My Portfolio Website is a responsive developer portfolio built with Next.js, TypeScript, and Tailwind CSS. It features a modular architecture, modern dark UI, reusable components, project showcases, skills, certifications, awards, publications, and contact sections.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
+    year: "2026",
     category: "Portfolio",
-    image: "/images/projects/project-2.png",
+    githubUrl: "https://github.com/Sarkar-Shizan/My-Portfolio-Website",
     liveUrl: "#",
-    githubUrl: "#",
+  },
+  {
+    id: "hazbin-project",
+    slug: "hazbin-project",
+    title: "HazBin Smart Waste Management",
+    description:
+      "An ESP32-based IoT smart waste management system with bin monitoring, gas detection, GPS tracking, OLED display, and Telegram alerts.",
+    longDescription:
+      "HazBin is an IoT-based smart waste management system developed using ESP32 and Arduino IDE. It monitors bin levels, detects hazardous gas, tracks GPS location, displays system information on an OLED screen, and sends Telegram alert notifications for real-time waste management support.",
+    tags: ["C++", "ESP32", "Arduino IDE", "IoT", "GPS", "OLED", "Telegram Bot"],
+    year: "2026",
+    category: "IoT",
+    githubUrl:
+      "https://github.com/Sarkar-Shizan/HazBin-Project_Source-Code-For-ArduinoIDE",
+    liveUrl: "#",
+  },
+  {
+    id: "golden-harvest",
+    slug: "golden-harvest",
+    title: "Golden Harvest",
+    description:
+      "An interactive rural life simulation built with C++ OpenGL and GLUT.",
+    longDescription:
+      "Golden Harvest is a rural life simulation project created using C++, OpenGL, and GLUT. It presents animated 2D visuals such as clouds, birds, boats, trees, rice fields, farmers, houses, goats, and paddy bundles to represent village life in a visual simulation environment.",
+    tags: ["C++", "OpenGL", "GLUT", "2D Graphics", "Animation", "Simulation"],
+    year: "2026",
+    category: "Graphics Simulation",
+    githubUrl:
+      "https://github.com/Sarkar-Shizan/GOLDEN-HARVEST-A-Rural-Life-Simulation",
+    liveUrl: "#",
+  },
+  {
+    id: "workconnect",
+    slug: "workconnect",
+    title: "WorkConnect",
+    description:
+      "A secure NestJS backend platform connecting users with verified service providers.",
+    longDescription:
+      "WorkConnect is a scalable backend system built with NestJS. It connects users with verified service providers and includes TypeORM-based database management, JWT authentication, encrypted passwords using bcrypt, and structured REST API development for a professional service platform.",
+    tags: ["NestJS", "TypeScript", "TypeORM", "JWT", "bcrypt", "REST APIs"],
+    year: "2026",
+    category: "Full Stack Web Application",
+    image: "/images/projects/workconnect.png",
+    githubUrl:
+      "https://github.com/Sarkar-Shizan/WorkConnect-All-in-One-Home-and-Professional-Service-Platform",
+    liveUrl: "#",
+  },
+  {
+    id: "homesphere",
+    slug: "homesphere",
+    title: "HomeSphere",
+    description:
+      "A smart home and interior service booking platform built with a 3-tier architecture.",
+    longDescription:
+      "HomeSphere is a web-based platform designed to connect customers with home and interior service providers. It supports service listing, booking, cancellation, and management through a secure and scalable 3-tier architecture.",
+    tags: ["C#", ".NET", "SQL Server", "3-Tier Architecture", "Web App"],
+    year: "2026",
+    category: "Service Platform",
+    githubUrl:
+      "https://github.com/Sarkar-Shizan/HomeSphere-A-Smart-Interior-Home-Service-Booking-Platform",
+    liveUrl: "#",
+  },
+  {
+    id: "hnms",
+    slug: "hnms",
+    title: "HNMS Health Navigation Management System",
+    description:
+      "An all-in-one healthcare platform connecting patients, hospitals, pharmacies, and administrators.",
+    longDescription:
+      "HNMS is a healthcare management platform that connects patients, hospitals, pharmacies, and administrators. It supports healthcare services such as doctor appointments, diagnostic tracking, medicine-related workflows, and administrative management.",
+    tags: ["PHP", "Healthcare System", "Web App", "Database", "Management System"],
+    year: "2025",
+    category: "Healthcare Platform",
+    githubUrl:
+      "https://github.com/Sarkar-Shizan/HNMS-Health-Navigation-Management-System",
+    liveUrl: "#",
+  },
+  {
+    id: "parking-system-arduino",
+    slug: "parking-system-arduino",
+    title: "Parking System Arduino Project",
+    description:
+      "An Arduino-based parking system project developed using C++.",
+    longDescription:
+      "Parking System Arduino Project is an embedded systems project focused on parking automation. It uses Arduino-based logic and C++ programming concepts to support smart parking management functionality.",
+    tags: ["C++", "Arduino", "Embedded System", "IoT"],
+    year: "2025",
+    category: "Embedded System",
+    githubUrl: "https://github.com/Sarkar-Shizan/Parking-System-Arduino-Project",
+    liveUrl: "#",
+  },
+  {
+    id: "lost-found-java",
+    slug: "lost-found-java",
+    title: "Lost & Found Management System",
+    description:
+      "A Lost and Found Management System developed using Java.",
+    longDescription:
+      "Lost & Found Management System is a Java-based application designed to manage lost and found item records. It helps users report, track, and manage lost or found belongings in an organized system.",
+    tags: ["Java", "OOP", "Management System"],
+    year: "2025",
+    category: "Desktop / Academic Project",
+    githubUrl: "https://github.com/Sarkar-Shizan/Lost-Found-Using-Java",
+    liveUrl: "#",
+  },
+  {
+    id: "aiub-lost-found",
+    slug: "aiub-lost-found",
+    title: "AIUB Lost & Found Management System",
+    description:
+      "A C# and SQL Server-based Lost and Found Management System for institutional use.",
+    longDescription:
+      "AIUB Lost & Found Management System is a C# and SQL Server-based system designed to streamline reporting, managing, and claiming lost or found items within an organization such as a university.",
+    tags: ["C#", "SQL Server", ".NET", "Database", "Management System"],
+    year: "2025",
+    category: "Management System",
+    githubUrl:
+      "https://github.com/Sarkar-Shizan/AIUB-Lost-Found-Management-System-Project",
+    liveUrl: "#",
+  },
+  {
+    id: "web-technologies",
+    slug: "web-technologies",
+    title: "Web Technologies",
+    description:
+      "A collection of web technology practice projects and academic frontend work.",
+    longDescription:
+      "Web Technologies contains practice and academic work related to frontend web development. It reflects foundational work with HTML and web development concepts.",
+    tags: ["HTML", "CSS", "JavaScript", "Web Development"],
+    year: "2025",
+    category: "Web Practice",
+    githubUrl: "https://github.com/Sarkar-Shizan/Web-Technologies",
+    liveUrl: "#",
   },
 ];
