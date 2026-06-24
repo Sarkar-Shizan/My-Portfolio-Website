@@ -1,7 +1,7 @@
 import SkillsPreview from "@/components/sections/SkillsPreview";
 
 export const metadata = {
-  title: "Skills | Ekizr Portfolio",
+  title: "Skills | Sarkar's Portfolio",
 };
 
 export default function SkillsPage() {

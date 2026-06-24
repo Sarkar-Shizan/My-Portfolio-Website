@@ -4,7 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Ekizr | Frontend Developer Portfolio",
+  title: "Sarkar's Portfolio",
   description: "Modern portfolio website built with Next.js, TypeScript, and Tailwind CSS.",
 };
 

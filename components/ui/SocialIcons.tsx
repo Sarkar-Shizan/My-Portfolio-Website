@@ -27,8 +27,7 @@ export default function SocialIcons({ withUserIcon = false }: SocialIconsProps) 
             key={item.label}
             href={item.href}
             aria-label={item.label}
-            className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/5 text-slate-300 transition hover:border-purple-400 hover:text-purple-300"
-          >
+            className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/5 text-slate-300 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-purple-400/70 hover:bg-purple-500/15 hover:text-purple-100 hover:shadow-[0_0_30px_rgba(168,85,247,0.65)]">
             <Icon size={18} />
           </a>
         );

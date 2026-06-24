@@ -1,7 +1,7 @@
 import ProjectsPreview from "@/components/sections/ProjectsPreview";
 
 export const metadata = {
-  title: "Projects | Ekizr Portfolio",
+  title: "Projects | Sarkar's Portfolio",
 };
 
 export default function ProjectsPage() {

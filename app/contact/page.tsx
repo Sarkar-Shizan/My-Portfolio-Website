@@ -1,7 +1,7 @@
 import ContactCTA from "@/components/sections/ContactCTA";
 
 export const metadata = {
-  title: "Contact | Ekizr Portfolio",
+  title: "Contact | Sarkar's Portfolio",
 };
 
 export default function ContactPage() {

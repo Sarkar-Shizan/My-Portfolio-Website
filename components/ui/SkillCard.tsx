@@ -1,9 +1,8 @@
-import type { Skill } from "@/data/skills";
+import type { SkillGroup } from "@/data/skills";
 
 type SkillCardProps = {
-  skill: Skill;
+  skill: SkillGroup;
 };
-
 export default function SkillCard({ skill }: SkillCardProps) {
   const Icon = skill.icon;
 
@@ -15,7 +14,7 @@ export default function SkillCard({ skill }: SkillCardProps) {
       <h3 className="mb-3 text-xl font-bold">{skill.title}</h3>
       <p className="mb-6 text-sm leading-relaxed text-slate-400">{skill.description}</p>
       <ul className="space-y-3 text-slate-400">
-        {skill.items.map((item) => (
+        {skill.items.map((item : any) => (
           <li key={item} className="flex gap-2">
             <span className="text-purple-400">•</span>
             <span>{item}</span>
