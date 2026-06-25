@@ -1,11 +1,11 @@
 import { portfolio } from "@/data/portfolio";
 import { User } from "lucide-react";
-import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa6";
 
 const socialLinks = [
   { label: "GitHub", href: portfolio.socials.github, icon: FaGithub },
   { label: "LinkedIn", href: portfolio.socials.linkedin, icon: FaLinkedinIn },
-  { label: "Twitter", href: portfolio.socials.twitter, icon: FaXTwitter },
+  { label: "Facebook", href: portfolio.socials.facebook, icon: FaFacebook },
 ];
 
 type SocialIconsProps = {

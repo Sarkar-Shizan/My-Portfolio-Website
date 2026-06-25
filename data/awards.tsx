@@ -1,28 +1,34 @@
 export type AwardItem = {
+  id: string;
   title: string;
   meta: string;
   description: string;
+  image: string;
+  awardUrl?: string;
 };
 
 export const awards: AwardItem[] = [
+
+  // New awards can be added here in the future
+
   {
-    title: "Best Final Project",
-    meta: "University Hackathon 2025",
-    description: "First place out of 80 teams for an accessible learning platform.",
+    id: "deans-list-fall-2024-2025",
+    title: "Dean’s List Honors",
+    meta: "Fall 2024–2025 · GPA 3.91",
+    description:
+      "Awarded by the Faculty of Science and Technology at American International University-Bangladesh for outstanding academic performance.",
+    image: "/images/awards/deans-list-fall-2024-2025.jpg",
+    awardUrl: "/images/awards/deans-list-fall-2024-2025.jpg",
   },
   {
-    title: "Frontend Innovation Award",
-    meta: "Dev Conf 2024",
-    description: "Recognized for outstanding interactive web experience.",
-  },
-  {
-    title: "Top 1% Contributor",
-    meta: "Open Source Friday",
-    description: "Recognized contributor across multiple React libraries.",
-  },
-  {
-    title: "Dean’s List",
-    meta: "Faculty of Engineering · 2023",
-    description: "Top academic standing for three consecutive semesters.",
-  },
+    id: "deans-list-spring-2023-2024",
+    title: "Dean’s List Honors",
+    meta: "Spring 2023–2024 · GPA 3.90",
+    description:
+      "Awarded by the Faculty of Science and Technology at American International University-Bangladesh for outstanding academic performance.",
+    image: "/images/awards/deans-list-spring-2023-2024.jpg",
+    awardUrl: "/images/awards/deans-list-spring-2023-2024.jpg",
+  }
+  
 ];
+

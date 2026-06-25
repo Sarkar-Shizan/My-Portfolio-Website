@@ -26,13 +26,13 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Desktop Nav */}
+        {/* Desktop Navigation */}
         <div className="hidden items-center gap-7 text-sm text-slate-400 lg:flex">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="relative transition-all duration-300 ease-out hover:-translate-y-0.5 hover:text-purple-200 hover:drop-shadow-[0_0_12px_rgba(216,180,254,0.9)] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:rounded-full after:bg-purple-400 after:shadow-[0_0_12px_rgba(168,85,247,0.9)] after:transition-all after:duration-300 hover:after:w-full"
+              className="relative transition-all duration-300 ease-out hover:-translate-y-0.5 hover:text-purple-200 hover:drop-shadow-[0_0_12px_rgba(216,180,254,0.9)] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:rounded-full after:bg-purple-400 after:shadow-[0_0_12px_rgba(168,85,247,0.9)] after:transition-all after:duration-300 hover:after:w-full"
             >
               {item.label}
             </Link>
@@ -47,30 +47,44 @@ export default function Navbar() {
           Hire Me
         </Link>
 
-        {/* Mobile Hamburger */}
-        <button
-          type="button"
-          onClick={() => setIsOpen((prev) => !prev)}
-          aria-label="Toggle mobile menu"
-          aria-expanded={isOpen}
-          className="flex h-11 w-11 flex-col items-center justify-center gap-1.5 rounded-full bg-transparent transition-all duration-300 hover:bg-purple-500/10 hover:shadow-[0_0_30px_rgba(168,85,247,0.45)] lg:hidden"
-        >
-          <span
-            className={`h-0.5 w-6 rounded-full bg-purple-300 transition-all duration-300 ${
-              isOpen ? "translate-y-2 rotate-45" : ""
-            }`}
-          />
-          <span
-            className={`h-0.5 w-6 rounded-full bg-purple-300 transition-all duration-300 ${
-              isOpen ? "opacity-0" : "opacity-100"
-            }`}
-          />
-          <span
-            className={`h-0.5 w-6 rounded-full bg-purple-300 transition-all duration-300 ${
-              isOpen ? "-translate-y-2 -rotate-45" : ""
-            }`}
-          />
-        </button>
+        {/* Mobile Actions */}
+        <div className="flex items-center gap-2 lg:hidden">
+          {/* Mobile Hire Me */}
+          <Link
+            href="/contact"
+            onClick={() => setIsOpen(false)}
+            className="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-full border border-purple-400/70 px-4 text-xs font-bold text-purple-300 transition-all duration-300 ease-out hover:border-purple-300 hover:text-purple-100 hover:shadow-[0_0_25px_rgba(168,85,247,0.6)] sm:text-sm"
+          >
+            Hire Me
+          </Link>
+
+          {/* Mobile Hamburger */}
+          <button
+            type="button"
+            onClick={() => setIsOpen((prev) => !prev)}
+            aria-label={isOpen ? "Close mobile menu" : "Open mobile menu"}
+            aria-expanded={isOpen}
+            className="flex h-11 w-11 flex-shrink-0 flex-col items-center justify-center gap-1.5 rounded-full bg-transparent transition-all duration-300 hover:bg-purple-500/10 hover:shadow-[0_0_30px_rgba(168,85,247,0.45)]"
+          >
+            <span
+              className={`h-0.5 w-6 rounded-full bg-purple-300 transition-all duration-300 ${
+                isOpen ? "translate-y-2 rotate-45" : ""
+              }`}
+            />
+
+            <span
+              className={`h-0.5 w-6 rounded-full bg-purple-300 transition-all duration-300 ${
+                isOpen ? "opacity-0" : "opacity-100"
+              }`}
+            />
+
+            <span
+              className={`h-0.5 w-6 rounded-full bg-purple-300 transition-all duration-300 ${
+                isOpen ? "-translate-y-2 -rotate-45" : ""
+              }`}
+            />
+          </button>
+        </div>
       </nav>
 
       {/* Mobile Menu Card */}
@@ -92,15 +106,9 @@ export default function Navbar() {
               {item.label}
             </Link>
           ))}
-
-          <Link
-            href="/contact"
-            onClick={() => setIsOpen(false)}
-            className="mt-2 rounded-full border border-purple-400/70 bg-transparent px-5 py-3 text-center text-sm font-bold text-purple-300 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-purple-300 hover:text-purple-100 hover:shadow-[0_0_35px_rgba(168,85,247,0.65)]"
-          > Hire Me
-          </Link>
         </div>
       </div>
     </header>
   );
 }
+

@@ -68,7 +68,6 @@ export const projects: Project[] = [
     tags: ["NestJS", "TypeScript", "TypeORM", "JWT", "bcrypt", "REST APIs"],
     year: "2026",
     category: "Full Stack Web Application",
-    image: "/images/projects/workconnect.png",
     githubUrl:
       "https://github.com/Sarkar-Shizan/WorkConnect-All-in-One-Home-and-Professional-Service-Platform",
     liveUrl: "#",

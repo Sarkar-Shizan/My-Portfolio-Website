@@ -1,6 +1,6 @@
 import { portfolio } from "@/data/portfolio";
 import SectionTitle from "@/components/ui/SectionTitle";
-import { Download, FolderGit2, User } from "lucide-react";
+import { Download, FolderGit2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
