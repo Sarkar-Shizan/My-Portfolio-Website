@@ -1,6 +1,6 @@
 import { portfolio } from "@/data/portfolio";
 import SectionTitle from "@/components/ui/SectionTitle";
-import { Download, FolderGit2 } from "lucide-react";
+import { Download, FolderGit2, View } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -27,8 +27,8 @@ export default function AboutPreview() {
             <a
               href={portfolio.resumePath}
               className="inline-flex items-center gap-2 rounded-2xl border border-purple-400/40 bg-purple-500 px-7 py-4 font-bold text-white shadow-[0_0_35px_rgba(168,85,247,0.45)] transition-all duration-300 ease-out hover:-translate-y-1 hover:border-purple-300 hover:bg-purple-400 hover:shadow-[0_0_55px_rgba(168,85,247,0.85)] active:translate-y-0">
-              <Download size={18} />
-              Download CV
+              <View size={18} />
+              View Resume
             </a>
 
             <Link
