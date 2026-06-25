@@ -12,11 +12,10 @@ export const portfolio = {
   resumePath: "/resume.pdf",
   location: "Dhaka, Bangladesh",
 
-  intro:
-    "Full-Stack Web Developer | HTML • CSS • JavaScript • TypeScript • Next.js • NestJS • .NET | REST APIs • SQL • Git/GitHub | Building Scalable Web Applications | AI & IoT Enthusiast",
+  intro: "Full-Stack Web Developer specializing in Next.js, NestJS, .NET, and TypeScript | Building Scalable, Secure, and User-Focused Web Applications, REST APIs, and SQL-Driven Solutions | AI & IoT Enthusiast",
 
-  about:
-    "A Computer Science & Engineering student at American International University-Bangladesh (AIUB), passionate about frontend and backend development. I focus on building digital products that are not only beautiful but meaningful—turning ideas into experiences people love to use. I am also interested in Software Quality Assurance (SQA), AI, and IoT. I am a quick learner, team player, and problem solver who is always eager to take on new challenges.",
+  about:"I am a Computer Science and Engineering student at American International University-Bangladesh (AIUB), passionate about building modern, scalable, and user-focused digital solutions. With a strong interest in both frontend and backend development, I enjoy transforming ideas into meaningful products that combine clean design, reliable functionality, and an engaging user experience.                                    Beyond full-stack development, I am also interested in Software Quality Assurance (SQA), Artificial Intelligence, and the Internet of Things (IoT). I am a curious learner, collaborative team player, and dedicated problem solver who embraces new challenges and continuously strives to improve my technical and creative abilities.",
+
 
   heroTags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "SEO"],
 
