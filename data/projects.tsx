@@ -14,6 +14,20 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+  id: "findback",
+  slug: "findback",
+  title: "FindBack",
+  description:
+    "A modern lost-and-found web application built with Next.js, TypeScript, Supabase, and Tailwind CSS.",
+  longDescription:
+    "FindBack is a community-driven lost-and-found platform designed to help users report, browse, and recover lost belongings. It includes lost and found item reporting, image upload support, public item browsing, category-based filtering, authentication with Supabase, and a clean responsive interface built using the Next.js App Router.",
+  tags: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "React"],
+  year: "2026",
+  category: "Web Application",
+  githubUrl: "https://github.com/Sarkar-Shizan/FindBack",
+  liveUrl: "#",
+},
+  {
     id: "my-portfolio-website",
     slug: "my-portfolio-website",
     title: "My Portfolio Website",
