@@ -38,7 +38,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
     year: "2026",
     category: "Portfolio",
-    githubUrl: "https://github.com/Sarkar-Shizan/My-Portfolio-Website",
+    // githubUrl: "https://github.com/Sarkar-Shizan/My-Portfolio-Website",
     liveUrl: "#",
   },
   {

@@ -36,7 +36,7 @@ export default function ContactCTA() {
             download
             className="inline-flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-7 py-4 font-bold text-white transition-all duration-300 ease-out hover:-translate-y-1 hover:border-purple-400/70 hover:bg-purple-500/15 hover:text-purple-100 hover:shadow-[0_0_40px_rgba(168,85,247,0.65)] active:translate-y-0">
             <Download size={18} />
-            Download Resume
+            Download Résumé
           </a>
         </div>
 
