@@ -28,36 +28,6 @@ export const projects: Project[] = [
   liveUrl: "#",
 },
   {
-    id: "hazbin-project",
-    slug: "hazbin-project",
-    title: "HazBin Smart Waste Management",
-    description:
-      "An ESP32-based IoT smart waste management system with bin monitoring, gas detection, GPS tracking, OLED display, and Telegram alerts.",
-    longDescription:
-      "HazBin is an IoT-based smart waste management system developed using ESP32 and Arduino IDE. It monitors bin levels, detects hazardous gas, tracks GPS location, displays system information on an OLED screen, and sends Telegram alert notifications for real-time waste management support.",
-    tags: ["C++", "ESP32", "Arduino IDE", "IoT", "GPS", "OLED", "Telegram Bot"],
-    year: "2026",
-    category: "IoT",
-    githubUrl:
-      "https://github.com/Sarkar-Shizan/HazBin-Project_Source-Code-For-ArduinoIDE",
-    liveUrl: "#",
-  },
-  {
-    id: "golden-harvest",
-    slug: "golden-harvest",
-    title: "Golden Harvest",
-    description:
-      "An interactive rural life simulation built with C++ OpenGL and GLUT.",
-    longDescription:
-      "Golden Harvest is a rural life simulation project created using C++, OpenGL, and GLUT. It presents animated 2D visuals such as clouds, birds, boats, trees, rice fields, farmers, houses, goats, and paddy bundles to represent village life in a visual simulation environment.",
-    tags: ["C++", "OpenGL", "GLUT", "2D Graphics", "Animation", "Simulation"],
-    year: "2026",
-    category: "Graphics Simulation",
-    githubUrl:
-      "https://github.com/Sarkar-Shizan/GOLDEN-HARVEST-A-Rural-Life-Simulation",
-    liveUrl: "#",
-  },
-  {
     id: "workconnect",
     slug: "workconnect",
     title: "WorkConnect",
@@ -95,11 +65,41 @@ export const projects: Project[] = [
       "An all-in-one healthcare platform connecting patients, hospitals, pharmacies, and administrators.",
     longDescription:
       "HNMS is a healthcare management platform that connects patients, hospitals, pharmacies, and administrators. It supports healthcare services such as doctor appointments, diagnostic tracking, medicine-related workflows, and administrative management.",
-    tags: ["PHP", "Healthcare System", "Web App", "Database", "Management System"],
+    tags: ["HTML","CSS","JavaScript", "PHP", "Healthcare System", "XAMPP", "Database"],
     year: "2025",
     category: "Healthcare Platform",
     githubUrl:
       "https://github.com/Sarkar-Shizan/HNMS-Health-Navigation-Management-System",
+    liveUrl: "#",
+  },
+  {
+    id: "hazbin-project",
+    slug: "hazbin-project",
+    title: "HazBin Smart Waste Management",
+    description:
+      "An ESP32-based IoT smart waste management system with bin monitoring, gas detection, GPS tracking, OLED display, and Telegram alerts.",
+    longDescription:
+      "HazBin is an IoT-based smart waste management system developed using ESP32 and Arduino IDE. It monitors bin levels, detects hazardous gas, tracks GPS location, displays system information on an OLED screen, and sends Telegram alert notifications for real-time waste management support.",
+    tags: ["C++", "ESP32", "Arduino IDE", "IoT", "GPS", "OLED", "Telegram Bot"],
+    year: "2026",
+    category: "IoT",
+    githubUrl:
+      "https://github.com/Sarkar-Shizan/HazBin-Project_Source-Code-For-ArduinoIDE",
+    liveUrl: "#",
+  },
+  {
+    id: "golden-harvest",
+    slug: "golden-harvest",
+    title: "Golden Harvest",
+    description:
+      "An interactive rural life simulation built with C++ OpenGL and GLUT.",
+    longDescription:
+      "Golden Harvest is a rural life simulation project created using C++, OpenGL, and GLUT. It presents animated 2D visuals such as clouds, birds, boats, trees, rice fields, farmers, houses, goats, and paddy bundles to represent village life in a visual simulation environment.",
+    tags: ["C++", "OpenGL", "GLUT", "2D Graphics", "Animation", "Simulation"],
+    year: "2026",
+    category: "Graphics Simulation",
+    githubUrl:
+      "https://github.com/Sarkar-Shizan/GOLDEN-HARVEST-A-Rural-Life-Simulation",
     liveUrl: "#",
   },
   {
