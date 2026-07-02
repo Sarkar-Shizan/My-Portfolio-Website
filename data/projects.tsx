@@ -8,10 +8,10 @@ export type Project = {
   year: string;
   category: string;
   image?: string;
+  images?: string[];
   liveUrl?: string;
   githubUrl?: string;
 };
-
 export const projects: Project[] = [
   {
   id: "findback",
@@ -24,6 +24,12 @@ export const projects: Project[] = [
   tags: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "React"],
   year: "2026",
   category: "Web Application",
+   image: "/images/projects/findback-4.png",
+  images: [
+    "/images/projects/findback-4.png",
+    "/images/projects/findback-2.png",
+    "/images/projects/findback-3.png",
+  ],
   githubUrl: "https://github.com/Sarkar-Shizan/FindBack",
   liveUrl: "#",
 },
