@@ -95,7 +95,7 @@ export default async function ProjectDetailsPage({
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-2xl border border-purple-400/40 bg-purple-500 px-5 py-3 text-sm font-black text-white shadow-[0_0_25px_rgba(168,85,247,0.35)] transition hover:-translate-y-1 hover:bg-purple-400 hover:shadow-[0_0_40px_rgba(168,85,247,0.8)]"
                 >
-                  Soouce Code
+                  Source Code
                   <GitHubIcon />
                 </a>
               )}
