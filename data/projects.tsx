@@ -28,20 +28,6 @@ export const projects: Project[] = [
   liveUrl: "#",
 },
   {
-    id: "my-portfolio-website",
-    slug: "my-portfolio-website",
-    title: "My Portfolio Website",
-    description:
-      "A modern personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.",
-    longDescription:
-      "My Portfolio Website is a responsive developer portfolio built with Next.js, TypeScript, and Tailwind CSS. It features a modular architecture, modern dark UI, reusable components, project showcases, skills, certifications, awards, publications, and contact sections.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
-    year: "2026",
-    category: "Portfolio",
-    // githubUrl: "https://github.com/Sarkar-Shizan/My-Portfolio-Website",
-    liveUrl: "#",
-  },
-  {
     id: "hazbin-project",
     slug: "hazbin-project",
     title: "HazBin Smart Waste Management",
@@ -157,6 +143,20 @@ export const projects: Project[] = [
     category: "Management System",
     githubUrl:
       "https://github.com/Sarkar-Shizan/AIUB-Lost-Found-Management-System-Project",
+    liveUrl: "#",
+  },
+  {
+    id: "my-portfolio-website",
+    slug: "my-portfolio-website",
+    title: "My Portfolio Website",
+    description:
+      "A modern personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.",
+    longDescription:
+      "My Portfolio Website is a responsive developer portfolio built with Next.js, TypeScript, and Tailwind CSS. It features a modular architecture, modern dark UI, reusable components, project showcases, skills, certifications, awards, publications, and contact sections.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
+    year: "2026",
+    category: "Portfolio",
+    // githubUrl: "https://github.com/Sarkar-Shizan/My-Portfolio-Website",
     liveUrl: "#",
   },
   {
