@@ -4,7 +4,7 @@ import type { Project } from "@/data/projects";
 import { ExternalLink, FolderGit2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 type ProjectCardProps = {
   project: Project;
@@ -20,25 +20,42 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   }, [project.images, project.image]);
 
   const [activeImage, setActiveImage] = useState(0);
+  const slideTimer = useRef<number | null>(null);
 
   const currentImage = images[activeImage];
 
+  function startHoverSlider() {
+    if (images.length <= 1) return;
+    if (slideTimer.current) return;
+
+    slideTimer.current = window.setInterval(() => {
+      setActiveImage((current) => (current + 1) % images.length);
+    }, 900);
+  }
+
+  function stopHoverSlider() {
+    if (!slideTimer.current) return;
+
+    window.clearInterval(slideTimer.current);
+    slideTimer.current = null;
+  }
+
   useEffect(() => {
     setActiveImage(0);
+    stopHoverSlider();
+
+    return () => {
+      stopHoverSlider();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [project.id]);
 
-  useEffect(() => {
-    if (images.length <= 1) return;
-
-    const timer = window.setInterval(() => {
-      setActiveImage((current) => (current + 1) % images.length);
-    }, 2500);
-
-    return () => window.clearInterval(timer);
-  }, [images.length, project.id]);
-
   return (
-    <article className="glass-card group flex h-full flex-col overflow-hidden rounded-3xl transition-all duration-300 ease-out hover:-translate-y-2 hover:border-purple-400/70 hover:bg-purple-500/10 hover:shadow-[0_0_45px_rgba(168,85,247,0.55)]">
+    <article
+      onMouseEnter={startHoverSlider}
+      onMouseLeave={stopHoverSlider}
+      className="glass-card group flex h-full flex-col overflow-hidden rounded-3xl transition-all duration-300 ease-out hover:-translate-y-2 hover:border-purple-400/70 hover:bg-purple-500/10 hover:shadow-[0_0_45px_rgba(168,85,247,0.55)]"
+    >
       <Link
         href={projectLink}
         aria-label={`View ${project.title}`}
@@ -135,8 +152,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-xl border border-purple-400/40 bg-purple-500 px-4 py-2 text-sm font-bold text-white shadow-[0_0_25px_rgba(168,85,247,0.35)] transition-all duration-300 ease-out hover:-translate-y-1 hover:border-purple-300 hover:bg-purple-400 hover:shadow-[0_0_40px_rgba(168,85,247,0.8)]"
             >
+              <GitHubIcon />
               GitHub
-              <ExternalLink size={14} />
+              
             </a>
           )}
 
@@ -154,5 +172,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </div>
     </article>
+  );
+} function GitHubIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      className="h-4 w-4"
+      fill="currentColor"
+    >
+      <path d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.2 3.4 9.6 8.1 11.1.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.4-1.3-5.4-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.2a11.7 11.7 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.7.2 3 .1 3.3.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6a11.8 11.8 0 0 0 8.1-11.1A11.5 11.5 0 0 0 12 .5Z" />
+    </svg>
   );
 }
