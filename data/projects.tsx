@@ -117,20 +117,6 @@ export const projects: Project[] = [
     liveUrl: "#",
   },
   {
-    id: "lost-found-java",
-    slug: "lost-found-java",
-    title: "Lost & Found Management System",
-    description:
-      "A Lost and Found Management System developed using Java.",
-    longDescription:
-      "Lost & Found Management System is a Java-based application designed to manage lost and found item records. It helps users report, track, and manage lost or found belongings in an organized system.",
-    tags: ["Java", "OOP", "Management System"],
-    year: "2025",
-    category: "Desktop / Academic Project",
-    githubUrl: "https://github.com/Sarkar-Shizan/Lost-Found-Using-Java",
-    liveUrl: "#",
-  },
-  {
     id: "aiub-lost-found",
     slug: "aiub-lost-found",
     title: "AIUB Lost & Found Management System",
@@ -143,6 +129,20 @@ export const projects: Project[] = [
     category: "Management System",
     githubUrl:
       "https://github.com/Sarkar-Shizan/AIUB-Lost-Found-Management-System-Project",
+    liveUrl: "#",
+  },
+  {
+    id: "lost-found-java",
+    slug: "lost-found-java",
+    title: "Lost & Found Management System",
+    description:
+      "A Lost and Found Management System developed using Java.",
+    longDescription:
+      "Lost & Found Management System is a Java-based application designed to manage lost and found item records. It helps users report, track, and manage lost or found belongings in an organized system.",
+    tags: ["Java", "OOP", "Management System"],
+    year: "2025",
+    category: "Desktop / Academic Project",
+    githubUrl: "https://github.com/Sarkar-Shizan/Lost-Found-Using-Java",
     liveUrl: "#",
   },
   {
@@ -159,18 +159,18 @@ export const projects: Project[] = [
     // githubUrl: "https://github.com/Sarkar-Shizan/My-Portfolio-Website",
     liveUrl: "#",
   },
-  {
-    id: "web-technologies",
-    slug: "web-technologies",
-    title: "Web Technologies",
-    description:
-      "A collection of web technology practice projects and academic frontend work.",
-    longDescription:
-      "Web Technologies contains practice and academic work related to frontend web development. It reflects foundational work with HTML and web development concepts.",
-    tags: ["HTML", "CSS", "JavaScript", "Web Development"],
-    year: "2025",
-    category: "Web Practice",
-    githubUrl: "https://github.com/Sarkar-Shizan/Web-Technologies",
-    liveUrl: "#",
-  },
+  // {
+  //   id: "web-technologies",
+  //   slug: "web-technologies",
+  //   title: "Web Technologies",
+  //   description:
+  //     "A collection of web technology practice projects and academic frontend work.",
+  //   longDescription:
+  //     "Web Technologies contains practice and academic work related to frontend web development. It reflects foundational work with HTML and web development concepts.",
+  //   tags: ["HTML", "CSS", "JavaScript", "Web Development"],
+  //   year: "2025",
+  //   category: "Web Practice",
+  //   githubUrl: "https://github.com/Sarkar-Shizan/Web-Technologies",
+  //   liveUrl: "#",
+  // },
 ];
