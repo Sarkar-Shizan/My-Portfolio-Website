@@ -30,7 +30,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
     slideTimer.current = window.setInterval(() => {
       setActiveImage((current) => (current + 1) % images.length);
-    }, 900);
+    }, 2000);
   }
 
   function stopHoverSlider() {
