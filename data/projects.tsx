@@ -14,11 +14,25 @@ export type Project = {
 };
 export const projects: Project[] = [
   {
+  id: "unigrade",
+  slug: "unigrade",
+  title: "UniGrade",
+  description:
+    "A modern grade calculation web application built with Next.js, TypeScript and Tailwind CSS.",
+  longDescription:
+    "UniGrade is a comprehensive grade calculation platform designed to streamline the process of tracking student's cgpa. It includes features for grade entry, calculation, visualization and download pdf of calculated cgpa, all built with a modern tech stack.",
+  tags: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
+  year: "2026",
+  category: "Web Application",
+  githubUrl: "https://github.com/Sarkar-Shizan/UniGrade",
+  liveUrl: "#",
+},
+  {
   id: "findback",
   slug: "findback",
   title: "FindBack",
   description:
-    "A modern lost-and-found web application built with Next.js, TypeScript, Supabase, and Tailwind CSS.",
+    "A modern lost-and-found web application built with Next.js, TypeScript and Tailwind CSS.",
   longDescription:
     "FindBack is a community-driven lost-and-found platform designed to help users report, browse, and recover lost belongings. It includes lost and found item reporting, image upload support, public item browsing, category-based filtering, authentication with Supabase, and a clean responsive interface built using the Next.js App Router.",
   tags: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
