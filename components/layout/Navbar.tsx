@@ -44,7 +44,7 @@ export default function Navbar() {
           href="/contact"
           className="hidden items-center gap-2 rounded-full border border-purple-400/70 bg-transparent px-4 py-2 font-bold text-purple-300 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-purple-300 hover:text-purple-100 hover:shadow-[0_0_35px_rgba(168,85,247,0.65)] lg:inline-flex"
         >
-          Hire Me
+          Reach Out
         </Link>
 
         {/* Mobile Actions */}
@@ -55,7 +55,7 @@ export default function Navbar() {
             onClick={() => setIsOpen(false)}
             className="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-full border border-purple-400/70 px-4 text-xs font-bold text-purple-300 transition-all duration-300 ease-out hover:border-purple-300 hover:text-purple-100 hover:shadow-[0_0_25px_rgba(168,85,247,0.6)] sm:text-sm"
           >
-            Hire Me
+            Reach Out
           </Link>
 
           {/* Mobile Hamburger */}
