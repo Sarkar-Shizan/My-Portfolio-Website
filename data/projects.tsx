@@ -13,15 +13,16 @@ export type Project = {
   githubUrl?: string;
 };
 export const projects: Project[] = [
-  {
+{
   id: "unigrade",
   slug: "unigrade",
-  title: "UniGrade",
+  title: "UniGrade - CGPA Calculator",
   description:
-    "A modern grade calculation web application built with Next.js, TypeScript and Tailwind CSS.",
+    "A modern CGPA calculator for Bangladeshi universities, built with Next.js, TypeScript, React, and Tailwind CSS.",
   longDescription:
-    "UniGrade is a comprehensive grade calculation platform designed to streamline the process of tracking student's cgpa. It includes features for grade entry, calculation, visualization and download pdf of calculated cgpa, all built with a modern tech stack.",
-  tags: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
+    "UniGrade is a responsive CGPA calculation platform designed for students of Bangladeshi universities. It supports university-specific grading systems, semester-wise course entry, previous CGPA and completed-credit records, marks and letter-grade input, automatic GPA and CGPA calculation, university search and division-based filtering, and downloadable PDF reports. The application is built with a modular Next.js App Router architecture, TypeScript, React, and Tailwind CSS.",
+  tags: ["Next.js", "TypeScript","React","Tailwind CSS","CGPA Calculator", "PDF Export",
+  ],
   year: "2026",
   category: "Web Application",
   githubUrl: "https://github.com/Sarkar-Shizan/UniGrade",
@@ -45,7 +46,7 @@ export const projects: Project[] = [
     "/images/projects/findback-3.png",
   ],
   githubUrl: "https://github.com/Sarkar-Shizan/FindBack",
-  liveUrl: "#",
+  liveUrl: "https://uni-grade-cgpa-calculator.vercel.app",
 },
   {
     id: "workconnect",
