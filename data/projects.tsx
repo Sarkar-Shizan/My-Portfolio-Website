@@ -48,11 +48,11 @@ export const projects: Project[] = [
   tags: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
   year: "2026",
   category: "Web Application",
-   image: "/images/projects/findback-4.png",
   images: [
-    "/images/projects/findback-4.png",
+    "/images/projects/findback-1.png",
     "/images/projects/findback-2.png",
     "/images/projects/findback-3.png",
+    "/images/projects/findback-4.png",
   ],
   githubUrl: "https://github.com/Sarkar-Shizan/FindBack",
   liveUrl: "#",
