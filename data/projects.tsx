@@ -26,7 +26,7 @@ export const projects: Project[] = [
   year: "2026",
   category: "Web Application",
   githubUrl: "https://github.com/Sarkar-Shizan/UniGrade",
-  liveUrl: "#",
+  liveUrl: "https://uni-grade-cgpa-calculator.vercel.app",
 },
   {
   id: "findback",
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     "/images/projects/findback-3.png",
   ],
   githubUrl: "https://github.com/Sarkar-Shizan/FindBack",
-  liveUrl: "https://uni-grade-cgpa-calculator.vercel.app",
+  liveUrl: "#",
 },
   {
     id: "workconnect",
