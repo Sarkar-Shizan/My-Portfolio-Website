@@ -16,7 +16,7 @@ export const awards: AwardItem[] = [
     meta: "Fall 2025–2026 · GPA 3.95",
     description:
       "Awarded by the Faculty of Science and Technology at American International University-Bangladesh for outstanding academic performance.",
-    image: "#",
+    image: "/images/awards/deans-list-fall-2025-2026.jpg",
     awardUrl: "#"
   },
   {
@@ -25,7 +25,7 @@ export const awards: AwardItem[] = [
     meta: "Spring 2024–2025 · GPA 4.00",
     description:
       "Awarded by the Faculty of Science and Technology at American International University-Bangladesh for outstanding academic performance.",
-    image: "#",
+    image: "/images/awards/deans-list-spring-2024-2025.jpg",
     awardUrl: "#",
   },
 

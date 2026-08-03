@@ -6,18 +6,26 @@ import { publications } from "@/data/publications";
 export const portfolio = {
   brand: "Sarkar's",
   name: "Md. Shizan Sarkar",
-  role: "Full Stack Web Developer",
+  role: "Full-Stack Developer & Undergraduate AI Researcher",
   subtitle: "Computer Science & Engineering Student",
   email: "shizansarkarsd@gmail.com",
   resumePath: "/resume.pdf",
   location: "Dhaka, Bangladesh",
 
-  intro: "Full-Stack Web Developer specializing in Next.js, NestJS, .NET, and TypeScript | Building Scalable, Secure, and User-Focused Web Applications, REST APIs, and SQL-Driven Solutions | AI & IoT Enthusiast",
+intro:
+  "Full-Stack Developer and Undergraduate AI Researcher with experience in Next.js, NestJS, TypeScript, and technical research writing. I build scalable, secure, and user-focused web applications while exploring practical applications of artificial intelligence, deep learning, computer vision, and IoT.",
 
-  about:"I am a Computer Science and Engineering student at American International University-Bangladesh (AIUB), passionate about building modern, scalable, and user-focused digital solutions. With a strong interest in both frontend and backend development, I enjoy transforming ideas into meaningful products that combine clean design, reliable functionality, and an engaging user experience.                                    Beyond full-stack development, I am also interested in Software Quality Assurance (SQA), Artificial Intelligence, and the Internet of Things (IoT). I am a curious learner, collaborative team player, and dedicated problem solver who embraces new challenges and continuously strives to improve my technical and creative abilities.",
-
-
-  heroTags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "SEO"],
+about:
+  "I am a Computer Science and Engineering final year student at American International University-Bangladesh (AIUB), a full-stack developer, and an undergraduate researcher with a strong interest in artificial intelligence and emerging technologies. I focus on developing modern, scalable, and reliable digital solutions by combining effective frontend design with secure backend architecture. My research interests include machine learning, deep learning, computer vision, explainable AI, and intelligent systems. I am also interested in Software Quality Assurance and the Internet of Things. Through academic research, hands-on development, and continuous experimentation, I aim to strengthen my technical expertise, contribute to meaningful projects, and create technology-driven solutions for real-world challenges.",
+  heroTags: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "NestJS",
+    "Deep Learning",
+    "Computer Vision",
+    "IoT",
+  ],
 
   stats: [
     {

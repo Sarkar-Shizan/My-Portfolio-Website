@@ -21,7 +21,8 @@ export const skills: SkillGroup[] = [
   {
     title: "Frontend Development",
     icon: Code2,
-    description: "Building responsive, modern, and user-friendly web interfaces.",
+    description:
+      "Building responsive, modern, and user-friendly web interfaces.",
     items: [
       "HTML",
       "CSS",
@@ -35,7 +36,8 @@ export const skills: SkillGroup[] = [
   {
     title: "Backend Development",
     icon: Server,
-    description: "Developing secure APIs, authentication systems, and backend logic.",
+    description:
+      "Developing secure APIs, authentication systems, and backend logic.",
     items: [
       "Node.js",
       "NestJS",
@@ -48,9 +50,24 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
+    title: "AI & Research",
+    icon: BrainCircuit,
+    description:
+      "Exploring artificial intelligence through research and practical projects.",
+    items: [
+      "Machine Learning",
+      "Deep Learning",
+      "Computer Vision",
+      "Explainable AI",
+      "Data Analysis",
+      "Academic Research",
+    ],
+  },
+  {
     title: "Database Management",
     icon: Database,
-    description: "Working with relational databases for scalable application data.",
+    description:
+      "Working with relational databases for scalable application data.",
     items: [
       "PostgreSQL",
       "SQL Server",
@@ -62,7 +79,8 @@ export const skills: SkillGroup[] = [
   {
     title: "Programming Languages",
     icon: BrainCircuit,
-    description: "Core programming experience across academic and practical projects.",
+    description:
+      "Core programming experience across academic and practical projects.",
     items: [
       "C++",
       "C#",
@@ -75,7 +93,8 @@ export const skills: SkillGroup[] = [
   {
     title: "IoT & Embedded Systems",
     icon: Cpu,
-    description: "Building hardware-based smart systems using sensors and microcontrollers.",
+    description:
+      "Building hardware-based smart systems using sensors and microcontrollers.",
     items: [
       "ESP32",
       "Arduino IDE",
@@ -89,7 +108,8 @@ export const skills: SkillGroup[] = [
   {
     title: "Graphics & Simulation",
     icon: Palette,
-    description: "Creating visual and simulation-based applications using graphics tools.",
+    description:
+      "Creating visual and simulation-based applications using graphics tools.",
     items: [
       "OpenGL",
       "GLUT",
@@ -102,7 +122,8 @@ export const skills: SkillGroup[] = [
   {
     title: "Development Tools",
     icon: Wrench,
-    description: "Tools I use for coding, debugging, testing, and project management.",
+    description:
+      "Tools I use for coding, debugging, testing, and project management.",
     items: [
       "Git",
       "GitHub",
