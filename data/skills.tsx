@@ -55,6 +55,8 @@ export const skills: SkillGroup[] = [
     description:
       "Exploring artificial intelligence through research and practical projects.",
     items: [
+      "R Programming",
+      "Data Science",
       "Machine Learning",
       "Deep Learning",
       "Computer Vision",
