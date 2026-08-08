@@ -10,6 +10,7 @@ export const portfolio = {
   subtitle: "Computer Science & Engineering Student",
   email: "shizansarkarsd@gmail.com",
   resumePath: "/resume.pdf",
+  CVPath: "/CV_image.pdf",
   location: "Dhaka, Bangladesh",
 
 intro:
