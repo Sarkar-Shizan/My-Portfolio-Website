@@ -10,6 +10,15 @@ export type AwardItem = {
 export const awards: AwardItem[] = [
 
   // New awards can be added here in the future
+    {
+    id: "deans-list-sp-2025-2026",
+    title: "Dean’s List Honors",
+    meta: "Spring 2025–2026 · GPA 4.00",
+    description:
+      "Awarded by the Faculty of Science and Technology at American International University-Bangladesh for outstanding academic performance.",
+    image: "/images/awards/deans-list-spring-2025-2026.jpg",
+    awardUrl: "#"
+  },
   {
     id: "deans-list-fall-2025-2026",
     title: "Dean’s List Honors",
