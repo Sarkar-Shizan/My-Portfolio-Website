@@ -36,6 +36,6 @@ export const publications: Publication[] = [
     type: "Conference Paper",
     description:
       "Conference paper presented at the International Conference on Power, Electronics, Communications, Computing, and Intelligent Infrastructure (PECCII 2026), organized by the Faculty of Engineering and Technology, Pabna University of Science and Technology.",
-    url: "https://ieeexplore.ieee.org/document/DOCUMENT_ID",
+    url: "https://ieeexplore.ieee.org/document/11661939",
   },
 ];
