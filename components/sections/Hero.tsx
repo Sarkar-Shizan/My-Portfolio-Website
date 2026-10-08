@@ -12,14 +12,14 @@ export default function Hero() {
       <div>
          <div className="mb-8 inline-flex cursor-default items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-2 text-xs font-bold text-slate-300 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-purple-400/70 hover:bg-purple-500/15 hover:text-purple-100 hover:shadow-[0_0_25px_rgba(168,85,247,0.65)]">
           <BrainCircuit size={15} />
-          Full-Stack Development & AI Research
+          AI/ML Research & Full-Stack Development 
         </div>
 
          <h1 className="text-5xl font-black leading-tight md:text-7xl">
-          Full-Stack Developer
+          AI/ML Researcher 
           <br />
           <span className="bg-gradient-to-r from-purple-300 to-fuchsia-300 bg-clip-text text-transparent">
-            & AI Researcher
+            & Full-Stack Developer
           </span>
         </h1>
 
