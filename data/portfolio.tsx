@@ -6,7 +6,7 @@ import { publications } from "@/data/publications";
 export const portfolio = {
   brand: "Sarkar's",
   name: "Md. Shizan Sarkar",
-  role: "Full-Stack Developer & Undergraduate AI Researcher",
+  role: "AI/ML Researcher & Full-Stack Developer",
   subtitle: "Computer Science & Engineering Student",
   email: "shizansarkarsd@gmail.com",
   resumePath: "/resume.pdf",
@@ -14,17 +14,23 @@ export const portfolio = {
   location: "Dhaka, Bangladesh",
 
 intro:
-  "Full-Stack Developer and Undergraduate AI Researcher with experience in Next.js, NestJS, TypeScript, and technical research writing. I build scalable, secure, and user-focused web applications while exploring practical applications of artificial intelligence, deep learning, computer vision, and IoT.",
+  "Undergraduate AI/ML Researcher and Full-Stack Developer with experience in Next.js, NestJS, TypeScript, and technical research writing. I build scalable, secure, and user-focused web applications while exploring practical applications of artificial intelligence, deep learning, computer vision, and IoT.",
 
 about:
   "I am a Computer Science and Engineering final year student at American International University-Bangladesh (AIUB), a full-stack developer, and an undergraduate researcher with a strong interest in artificial intelligence and emerging technologies. I focus on developing modern, scalable, and reliable digital solutions by combining effective frontend design with secure backend architecture. My research interests include machine learning, deep learning, computer vision, explainable AI, and intelligent systems. I am also interested in Software Quality Assurance and the Internet of Things. Through academic research, hands-on development, and continuous experimentation, I aim to strengthen my technical expertise, contribute to meaningful projects, and create technology-driven solutions for real-world challenges.",
   heroTags: [
+    "Machine Learning",
+    "Artificial Intelligence",
+    "Deep Learning",
+    "Computer Vision",
+    "Medical Image Analysis",
+    "Explainable AI",
+    "Software Development",
     "Next.js",
     "React",
     "TypeScript",
     "NestJS",
-    "Deep Learning",
-    "Computer Vision",
+    "Node.js",
     "IoT",
   ],
 
